@@ -2,16 +2,15 @@
 #include <string.h>
 
 /**
-* _strncat - Concatenates two strings
-* @src: uses n bytes
+* _strncpy - writes a function that copes a string
 *
-* @dest: resulting string
-* @n: int parameter
-* Return: returns pointer to resulting string dest
+* @dest: pointer to destination
+* @src: string to be copied
+* @n: parameter to use
+* Return: always 0
 */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-		strncat(dest, src, n);
-
-			return (dest);
+strncpy(dest, src, n);
+return (dest);
 }
